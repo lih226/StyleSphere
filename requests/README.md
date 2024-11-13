@@ -1,7 +1,8 @@
-npm init -y
-npm install express
-NEW: 
-npm install body-parser
+To set up:
+* npm init -y
+* npm install express
+* npm install body-parser
+* npm install cors
 
-To Start
-npm start
+To run:
+* npm start

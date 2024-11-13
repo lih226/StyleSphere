@@ -1,10 +1,13 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const port = 3000
 
-//We need a body parser to parse the JSON!!
+//Use body parser to parse the JSON
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
+//Use cors to enable CORS to allow React Native to make requests to Express
+app.use(cors());
 //Structure: id, uri, mediaType, description, username
 const posts = [];
 
@@ -21,7 +24,7 @@ app.post('/posts', (req, res) => {
   }
 
   if(posts.find(e => e.id === newPost.id)){
-    return res.status(400).send("Username already taken");
+    return res.status(400).send("Id already taken");
   }
 
   lastId += 1;
