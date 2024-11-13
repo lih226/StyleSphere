@@ -9,9 +9,11 @@ See how other creators style these pieces to make informed choices before you bu
 ***Download necessary dependencies by following the README.md for the database and mobile folders.
 Open Separate Terminals:
 * Keep one terminal open for the database and another for the mobile folder.
+
 Run the Database:
 * In the terminal for the database, type:
 * ```npm run dev```
+
 Run the Mobile App:
 * In the terminal for the mobile folder, type:
 * ```npx expo start```
